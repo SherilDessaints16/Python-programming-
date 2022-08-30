@@ -1,0 +1,22 @@
+import re
+flag = 0
+passwd = input ("Enter the username: ")
+if not re.search('[0-9]', usname):
+    flag = 1
+
+if not re.search('[a-z]', usname):
+    flag = 1
+
+if not re.search('[A-Z]', usname):
+    flag = 1
+    
+if not re.search('[$@#!]', usname):
+    flag = 1
+
+if len(usname)<6:
+    flag = 1
+    
+if (flag == 0):
+    print ('username is valid')
+else:
+    print ('username is invalid')
