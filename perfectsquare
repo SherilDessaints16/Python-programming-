@@ -1,0 +1,12 @@
+import math 
+
+def PerfectSquare(p):   
+    a = math.sqrt(p)
+    
+    if int(a + 0.5) ** 2 == p:
+        print(p, 'is a perfect square')
+    else:
+        print(p, 'is not a perfect square')
+    return a
+num = int(input('Enter a number: '))
+PerfectSquare(num)
