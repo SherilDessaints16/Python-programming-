@@ -1,0 +1,14 @@
+a= int(input("Enter the number of loaves:"))
+b= int(input("Enter the number of day old loaves:"))
+c = 185
+print("Regular price is:Rs.185")
+New_amount= a*c
+Old_amount= b*c
+Discount_amount=Old_amount*(6/10)
+if (a<0):   
+
+   print("Invalid input\n")
+else:
+  print("Amount of new loaves:",New_amount)
+  print("\n Amount of day old loaves:",Discount_amount)
+  print("\n Total amount:",New_amount+Discount_amount)
