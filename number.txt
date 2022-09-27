@@ -1,0 +1,15 @@
+print("Enter -1 to exit... ")
+a=[]
+b=[]
+while True:
+    l=int(input("Enter the number "))
+    if(l==-1):
+        break
+    if(l>0):
+        a.append(l)
+    else:
+        b.append(l)
+Average=(sum(s)/len(s))
+Average=(sum(e)/len(e))
+print("The average of negative number is: ",Average)
+print("The average of positive number is: ",Average)
