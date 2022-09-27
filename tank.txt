@@ -1,0 +1,17 @@
+def MaxArea(A, Len) :
+    Area = 0
+    for i in range(Len) :
+        for j in range(i + 1, Len) :
+           
+
+            Area = max(Area, min(A[j], A[i]) * (j - i))
+    return Area
+ 
+a= []
+b= int(input("Enter number of elements : "))
+for i in range(0, n):
+   dee = int(input())
+    a.append(dee)
+print(a)
+len1 = len(a)
+print(MaxArea(a, len1))
