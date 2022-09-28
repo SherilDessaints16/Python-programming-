@@ -1,0 +1,9 @@
+def items(a):
+    b=200*(a-1)
+    return b
+c=int(input("Enter the number:"))
+if(c>=0):
+    print("no of items:",c)
+    print("shipping charge:",items(c)+750)
+else:
+    print("Invalid input")
