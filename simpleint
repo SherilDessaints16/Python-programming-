@@ -1,0 +1,18 @@
+a = int(input("Enter the Principle Amount: "))
+b = 10
+c = int(input("Enter the Number of Years: "))
+d = input("Is customer senior citizen(y/n): ")
+def SimpleInterest(a,b,c,d):
+    SI  = (a*b*c)/100
+    if ( b == 'f'):
+        g = 12
+        print("The Simple Interest is ",SI)
+    elif(a<0):
+        print("Invalid Input" )
+    elif(c<0):
+        print("Invalid Input" )
+    else:
+        b = 10
+        print("The Simple Interest is ",SI)
+
+SimpleInterest(a,b,c,d)
