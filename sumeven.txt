@@ -1,0 +1,21 @@
+def squareSumEvenNSumOdd(a):
+    odd = 0
+    even = 0
+    for i in a:
+        if (i%2 ==0):
+            even = even+i**2
+        else:
+            odd = odd+i**2
+    a=[odd,even]
+    return a
+a=[]
+b= int(input("Enter the number of element: "))
+if b <= 0:
+      print("Invalid Input")
+    
+for i in range(b):
+    if b <0:
+      print("Invalid Input")
+    abc = int(input("Enter the element: "))
+    a.append(abc)
+print(squareSumEvenNSumOdd(a))
